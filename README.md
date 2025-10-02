@@ -99,7 +99,7 @@ A **web-based Task Management System** that helps users manage tasks efficiently
 ```bash
 git clone https://github.com/tushar6263/Simple-Task-Management-System.git
 ```
-2. Install dependencies for frontend and backend:
+### 2. Install dependencies for frontend and backend:
    ```bash
    cd client
    npm install
@@ -107,7 +107,7 @@ git clone https://github.com/tushar6263/Simple-Task-Management-System.git
    npm install
    ```
 
-3. Run the development servers:
+### 3. Run the development servers:
 ```bash
 # Backend
 Nodemon server.js(5000)
