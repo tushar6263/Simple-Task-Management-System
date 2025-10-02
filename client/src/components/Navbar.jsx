@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { setToken } from "../api";
-import { Menu, X } from "lucide-react"; // icons
+import { Menu, X } from "lucide-react"; 
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ export default function Navbar() {
       className="backdrop-blur-lg bg-white/20 border-b border-white/30 shadow-lg shadow-blue-500/20"
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Brand */}
+       
         <motion.div
           whileHover={{ scale: 1.1, rotateX: 10, rotateY: -10 }}
           className="text-xl sm:text-2xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent drop-shadow-md"
@@ -30,7 +30,6 @@ export default function Navbar() {
           Task Manager
         </motion.div>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-4 items-center">
           {token ? (
             <>
@@ -79,7 +78,7 @@ export default function Navbar() {
           )}
         </div>
 
-        {/* Mobile Menu Button */}
+       
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="p-2 rounded-lg bg-white/30">
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -87,7 +86,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
+    
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}

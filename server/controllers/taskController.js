@@ -1,7 +1,7 @@
 const Task = require('../models/Task');
 const mongoose = require('mongoose');
 
-// Create Task
+
 exports.createTask = async (req, res) => {
   try {
     const { title, description, dueDate, priority, assignedTo } = req.body;
@@ -24,7 +24,6 @@ exports.createTask = async (req, res) => {
   }
 };
 
-// Get tasks with pagination & filter
 exports.getTasks = async (req, res) => {
   try {
     let { page = 1, limit = 10, status, priority, assignedTo } = req.query;
@@ -50,7 +49,7 @@ exports.getTasks = async (req, res) => {
   }
 };
 
-// Get one task by ID
+
 exports.getTaskById = async (req, res) => {
   try {
     if (!mongoose.Types.ObjectId.isValid(req.params.id))
@@ -73,7 +72,6 @@ exports.getTaskById = async (req, res) => {
   }
 };
 
-// Update task (fields optional)
 exports.updateTask = async (req, res) => {
   try {
     if (!mongoose.Types.ObjectId.isValid(req.params.id))
@@ -105,7 +103,6 @@ exports.updateTask = async (req, res) => {
   }
 };
 
-// Delete task (only creator)
 exports.deleteTask = async (req, res) => {
   try {
     if (!mongoose.Types.ObjectId.isValid(req.params.id))
@@ -125,7 +122,7 @@ exports.deleteTask = async (req, res) => {
   }
 };
 
-// Update status
+
 exports.updateTaskStatus = async (req, res) => {
   try {
     if (!mongoose.Types.ObjectId.isValid(req.params.id))
@@ -146,7 +143,7 @@ exports.updateTaskStatus = async (req, res) => {
   }
 };
 
-// Update priority
+
 exports.updateTaskPriority = async (req, res) => {
   try {
     if (!mongoose.Types.ObjectId.isValid(req.params.id))
