@@ -13,7 +13,7 @@ A **web-based Task Management System** that helps users manage tasks efficiently
   - **Description**
   - **Due Date**  
 - Tasks can be added to **priority lists** (Low, Medium, High).  
-![Taskcreation](./public/Images/TaskCreation.png)
+![Taskcreation](./client/public/Images/TaskCreation.png)
 
 ---
 
@@ -24,7 +24,7 @@ A **web-based Task Management System** that helps users manage tasks efficiently
   - **Due Date**
   - **Status** (Pending / Completed)  
 - Uses **AJAX** for fast, smooth updates without page reloads.  
-![TaskList](./public/Images/TaskList.png)
+![TaskList](./client/public/Images/TaskList.png)
 
 ---
 
@@ -34,7 +34,7 @@ A **web-based Task Management System** that helps users manage tasks efficiently
   - **Due Date**
   - **Priority**
   - **Status**  
-![TaskDetails](./public/Images/TaskDetails.png)
+![TaskDetails](./client/public/Images/TaskDetails.png)
 
 ---
 
@@ -46,7 +46,7 @@ A **web-based Task Management System** that helps users manage tasks efficiently
   - **Due Date**
   - **Priority**
   - **Status**  
-![TaskEdit](./public/Images/TaskEdit.png)
+![TaskEdit](./client/public/Images/TaskEdit.png)
 
 ---
 
@@ -66,7 +66,7 @@ A **web-based Task Management System** that helps users manage tasks efficiently
   - Add/remove users
   - Assign tasks  
 - Logged-in users can only view their **assigned tasks**.  
-![Auth](./public/Images/Auth.png)
+![Auth](./client/public/Images/Auth.png)
 
 ---
 
@@ -98,15 +98,14 @@ A **web-based Task Management System** that helps users manage tasks efficiently
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/tushar6263/Simple-Task-Management-System.git
-
----
+```
 2. Install dependencies for frontend and backend:
    ```bash
    cd client
    npm install
    cd server
    npm install
---- 
+   ```
 
 3. Run the development servers:
 ```bash
@@ -117,10 +116,10 @@ Nodemon server.js(5000)
 npm run dev
 
 Access the app in your browser at http://localhost:5173 (or the port provided by Vite).
----
+```
 
 ### License
-
+```bash
 This project is open-source and available for modification and personal use.
----
+```
 
